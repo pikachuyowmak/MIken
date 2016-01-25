@@ -20,5 +20,5 @@ class Room:NSObject {
 }
 var room1:Room = Room()
     room1.number = 505
-    room1.type = Double
+    room1.type = "Double"
     room1.price = 30000
