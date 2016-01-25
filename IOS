@@ -1,0 +1,27 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+
+class Room:NSObject {
+    var number : Int = 0
+    var type: String = ""
+    var price: Int = 0
+        func roominfo() ->Void{
+                print("RoomNumber: \(number)")
+                print("Type:\(type)")
+                print("price:\(price)")
+                }
+            func discount(discountRate:Int) ->Int {
+                return price + discountRate/100
+                
+                }
+    
+}
+var room1:Room = Room()
+    room1.number = 101
+    room1.type = "double"
+    room1.price = 30000
+room1.discount(500)
+room1.roominfo()
+
